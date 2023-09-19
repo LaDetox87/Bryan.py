@@ -16,6 +16,7 @@ for i in range (1,101):
         nom = "bryan" + str(i)         
         os.mkdir(nom)
         fakef = open(nom + "/pasici.py","w+")
+        fakef.close()
 
 # Rédaction du fichier texte 
 f = open("Ne_Paniquez_Pas.txt", "w+")
