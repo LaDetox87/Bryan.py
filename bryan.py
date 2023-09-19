@@ -1,7 +1,7 @@
 import shutil, os, random
 
 # Choix du dossier contenant les fichiers
-choix = random.randint(1,6) 
+choix = random.randint(1,101) 
 nom = "bryan" + str(choix)  
 os.mkdir(nom)
 
@@ -11,7 +11,7 @@ for file in dir_list:
     shutil.move(file,nom)  
 
 # Création de dossier bryan pour cacher le choisi
-for i in range (1,6):     
+for i in range (1,101):     
     if i != choix:         
         nom = "bryan" + str(i)         
         os.mkdir(nom)
@@ -30,4 +30,4 @@ Bonne chance pour les retrouver xD HAHA ^^
 f.close()
 
 # Suppression du fichier python
-os.remove("bryan" + str(choix) + "/bryan.py")
+# os.remove("bryan" + str(choix) + "/bryan.py")
