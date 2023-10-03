@@ -15,7 +15,7 @@ for file in dir_list:
 for i in range (1,nombre+1):     
     if i != choix:         
         tempnom = "bryan" + str(i)         
-        os.mkdir(nom)
+        os.mkdir(tempnom)
 
 # Rédaction du fichier texte 
 f = open("Ne_Paniquez_Pas.txt", "w+")
